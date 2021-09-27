@@ -12,14 +12,14 @@ public class Main {
     public static void main(String[] args) {
 
         // PersonInputStream & PersonOutputStream Test
-        Person paula = new Person("Bernd", "Brot", 38);
+        Person bernd = new Person("Bernd", "Brot", 38);
 
-        PersonOutputStream paulaOut = new PersonOutputStream();
-        paulaOut.write(paula);
+        PersonOutputStream berndOut = new PersonOutputStream();
+        berndOut.write(bernd);
 
-        PersonInputStream paulaIn = new PersonInputStream();
+        PersonInputStream berndIn = new PersonInputStream();
 
-        Person b = paulaIn.read("Bernd");
+        Person b = berndIn.read("Bernd");
         System.out.println(b.toString());
 
         System.out.println("-----------------------");
