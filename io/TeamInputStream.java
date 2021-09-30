@@ -17,7 +17,7 @@ public class TeamInputStream {
         this.file = new File(team);
 
         try {
-            byte[] bytes = Files.readAllBytes( this.file.toPath());
+            byte[] bytes = Files.readAllBytes(this.file.toPath());
             String[] persons = new String(bytes).split("\n");
             List<Person> members = new ArrayList<>();
 
